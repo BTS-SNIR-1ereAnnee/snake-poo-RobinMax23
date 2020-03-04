@@ -6,7 +6,6 @@
 #include "Point.h"
 #include "Board.h"
 
-
 using namespace std;
 
 int main()
@@ -17,12 +16,14 @@ int main()
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
 
-    Point p(10,10);
+    Point p(9,9);
     p.drawPoint();
-
-
     p.moveUp();
     p.drawPoint();
+    p.setX(15);
+    cout << p.getX();
+    
+       
     
     //cout << "press any key to quit" << endl;
     getchar();
