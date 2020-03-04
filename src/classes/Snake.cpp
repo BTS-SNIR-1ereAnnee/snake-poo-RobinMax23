@@ -5,12 +5,12 @@
 #include "Snake.h"
 using namespace std;
 
-Snake::ajouterPoint()
+void Snake::ajouterPoint()
 {
-
+    
 }
 
-Snake::afficher()
+void Snake::afficher()
 {
     
 }

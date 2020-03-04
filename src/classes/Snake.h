@@ -12,13 +12,13 @@ class Snake
 {
 public:
     
-    snake();
+    Snake();
     void ajouterPoint();
     void afficher();
     
 private:
     
-    pointSerpent[100];
+    Point Serpent[100];
     int longueur = 4;
 
     

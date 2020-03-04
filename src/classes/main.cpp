@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Point.h"
 #include "Board.h"
+#include "Snake.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ int main()
     p.setX(15);
     cout << p.getX();
     
+
        
     
     //cout << "press any key to quit" << endl;
