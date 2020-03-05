@@ -13,13 +13,14 @@ class Snake
 public:
     
     Snake();
-    void ajouterPoint();
+    ~Snake();
+    void ajouterPoint(Point p);
     void afficher();
     
 private:
     
-    Point Serpent[100];
-    int longueur = 4;
+    Point Serpent[20];
+    int m_index;
 
     
 };

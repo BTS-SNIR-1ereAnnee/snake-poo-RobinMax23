@@ -22,7 +22,7 @@ int main()
     p.moveUp();
     p.drawPoint();
     p.setX(15);
-    cout << p.getX();
+//    cout << p.getX();
     
 
        

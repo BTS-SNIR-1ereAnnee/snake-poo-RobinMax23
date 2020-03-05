@@ -1,13 +1,21 @@
-#include "Board.h"
-#include <stdlib.h>
 #include <iostream>
 #include "Point.h"
 #include "Snake.h"
 using namespace std;
 
-void Snake::ajouterPoint()
+Snake::Snake()
 {
-    
+    this->m_index = 0;
+}
+
+void Snake::ajouterPoint(Point p)
+{
+    this->Serpent[m_index] = p;
+    if(m_index <= 19)
+    {
+        m_index++;
+    }
+        
 }
 
 void Snake::afficher()
