@@ -20,5 +20,8 @@ void Snake::ajouterPoint(Point p)
 
 void Snake::afficher()
 {
-    
+    for(int i=0;i<m_index;i++)
+    {
+        Serpent[i].drawPoint();
+    }
 }

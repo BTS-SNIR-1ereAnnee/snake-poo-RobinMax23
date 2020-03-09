@@ -23,6 +23,7 @@ int main()
     p.drawPoint();
     p.setX(15);
 //    cout << p.getX();
+    p.afficher();
     
 
        
