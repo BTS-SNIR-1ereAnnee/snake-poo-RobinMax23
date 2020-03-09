@@ -12,8 +12,9 @@ class Snake							//Création de class Snake
 {
 public:
 
-    Snake();						//Constructeur
-    virtual ~Snake();						//Destructeur
+    Snake();						//Constructeurpar défault
+    Snake(int x, int y);			//Constructeur
+    virtual ~Snake();				//Destructeur
     void ajouterPoint(Point p);		//Attributs
     void afficher();				//Attributs
     

@@ -6,9 +6,13 @@ using namespace std;
 Snake::Snake()
 {
     this->m_index = 0;							//Déclaration de l'itérateur à 0
+
 }
 
-
+Snake::Snake(int x, int y)
+{
+		
+}
 
 /******
 Fonction ajouter point du serpent
@@ -17,7 +21,10 @@ Fonction ajouter point du serpent
 void Snake::ajouterPoint(Point p)
 {
     this->Serpent[m_index] = p;					//Serpent pointant vers le tableau
-
+	if (m_index<=19)
+	{
+		m_index++;
+	}
         
 }
 
@@ -34,6 +41,7 @@ void Snake::afficher()
     }
 }
 
+	
 	Snake::~Snake()
 	{
 		
