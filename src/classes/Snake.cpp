@@ -9,6 +9,11 @@ Snake::Snake()
 
 }
 
+Snake::~Snake()
+{
+		
+}
+
 Snake::Snake(int x, int y)
 {
 		
@@ -41,8 +46,72 @@ void Snake::afficher()
     }
 }
 
-	
-	Snake::~Snake()
-	{
-		
-	}
+
+/******
+Fonctions déplacement du serpent
+******/
+
+void Snake::moveDown()
+{
+    for(int i=0;i<m_index;i++)					//Parcourir le tableau pour afficher serpent
+    {
+        Serpent[i].moveDown();					//dessiner les points du serpent
+    }
+}
+
+
+void Snake::moveUp()
+{
+    for(int i=0;i<m_index;i++)					//Parcourir le tableau pour afficher serpent
+    {
+        Serpent[i].moveUp();					//dessiner les points du serpent
+    }
+}
+
+
+void Snake::moveLeft()
+{
+    for(int i=0;i<m_index;i++)					//Parcourir le tableau pour afficher serpent
+    {
+        Serpent[i].moveLeft();					//dessiner les points du serpent
+    }
+}
+
+
+void Snake::moveRight()
+{
+    for(int i=0;i<m_index;i++)					//Parcourir le tableau pour afficher serpent
+    {
+        Serpent[i].moveRight();					//dessiner les points du serpent
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

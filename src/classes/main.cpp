@@ -32,12 +32,17 @@ int main()
 	serpent.afficher();				//Appel de la fonction affichage
     
 	Point p2(9,10);
-	serpent.ajouterPoint(p2);		//Appel de la fonction ajouterPoint
-	serpent.afficher();	
+	serpent.ajouterPoint(p2);		
+	serpent.afficher();
+
+	Point p3(9,11);
+	serpent.ajouterPoint(p3);
+	serpent.afficher();
 	
+	Point p4(9,12);
+	serpent.ajouterPoint(p4);
+	serpent.afficher();
 	
-	
-	    
     //cout << "press any key to quit" << endl;
     getchar();
     fenetre->kill();

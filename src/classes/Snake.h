@@ -15,8 +15,13 @@ public:
     Snake();						//Constructeurpar défault
     Snake(int x, int y);			//Constructeur
     virtual ~Snake();				//Destructeur
+    
     void ajouterPoint(Point p);		//Attributs
     void afficher();				//Attributs
+    void moveDown();
+    void moveUp();
+    void moveRight();
+    void moveLeft();
     
 private:
     
