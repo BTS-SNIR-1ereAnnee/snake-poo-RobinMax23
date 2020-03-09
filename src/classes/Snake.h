@@ -8,19 +8,19 @@
 
 class Board;
 class Point;
-class Snake
+class Snake							//Création de class Snake
 {
 public:
-    
-    Snake();
-    ~Snake();
-    void ajouterPoint(Point p);
-    void afficher();
+
+    Snake();						//Constructeur
+    virtual ~Snake();						//Destructeur
+    void ajouterPoint(Point p);		//Attributs
+    void afficher();				//Attributs
     
 private:
     
-    Point Serpent[20];
-    int m_index;
+    Point Serpent[20];				//Déclaration Tableau
+    int m_index;					//Déclaration itérateur
 
     
 };
