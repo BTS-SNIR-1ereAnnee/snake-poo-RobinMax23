@@ -17,19 +17,27 @@ int main()
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
 
-    Point p(9,9);
+
+    
 //    p.drawPoint();
 //    p.moveUp();
 //    p.drawPoint();
 //    p.setX(15);
-//  cout << p.getX();
+//    cout << p.getX();
 	
-	Snake serpent;
-	serpent.ajouterPoint(p);
-	serpent.afficher();
+	Snake serpent;	
+	
+	Point p(9,9);				
+	serpent.ajouterPoint(p);		//Appel de la fonction ajouterPoint
+	serpent.afficher();				//Appel de la fonction affichage
     
-       
-    
+	Point p2(9,10);
+	serpent.ajouterPoint(p2);		//Appel de la fonction ajouterPoint
+	serpent.afficher();	
+	
+	
+	
+	    
     //cout << "press any key to quit" << endl;
     getchar();
     fenetre->kill();
